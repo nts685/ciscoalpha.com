@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="/index.html"><img src="./Resource/Logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">SERVICES<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown_menu">
+                            <ul>
+                                <li><a href="https://nus.edu.ws/">NUS Online</a></li>
+                                <li><a href="https://onlinestudy.nus.edu.ws/login/index.php">Onlinestudy</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="./staff.html">STAFF</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="course.html">COURSE <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown_menu">
+                            <ul>
+                                <li><a href="course.html">Networking</a></li>
+                                <li><a href="course.html">OS & IT </a></li>
+                                <li><a href="course.html">Programming</a></li>
+                                <li><a href="course.html">Internet of Things </a></li>
+                                <li><a href="course.html">Packet Tracer</a></li>
+                                <li><a href="course.html">Cybersecurity</a></li>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>About Us</h1>
+
+    </section>
+
+
+    <!-------------------------------------------------About US-------------------------------------------------------->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>National University Of Samoa Cisco Academy</h1>
+                <p>Cisco Systems, Inc., commonly known as Cisco, is an American-based multinational technology
+                    conglomerate corporation headquartered in San Jose, California. Cisco develops, manufactures, and
+                    sells networking hardware, software, telecommunications equipment and other high-technology services
+                    and products.[4] Cisco specializes in specific tech markets, such as the Internet of Things (IoT),
+                    domain security, videoconferencing, and energy management with leading products including Webex,
+                    OpenDNS, Jabber, Duo Security, and Jasper. Cisco is one of the largest technology companies in the
+                    world ranking 63 on the Fortune 100 with over $51 billion in revenue and nearly 80,000 employees.[5]
+                </p>
+            </div>
+
+            <div class="about-col">
+                <img src="https://metapi.pk/wp-content/uploads/2021/07/Cisco.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-------------------------------------------------Footer-------------------------------------------------------->
+
+    <Section class="footer">
+        <h4>Contact</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sapiente consequuntur dolor suscipit quaerat
+            cum illo aliquid voluptate voluptatibus <br> laudantium provident, odit molestias nostrum? Veritatis
+            perferendis
+            debitis nemo esse ad!</p>
+
+        <div class="icons">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+        <p class="copyright"> &copy; Copyright All rights reserved. </p>
+    </Section>
+
+
+    <!------------------------------------------Javascript for Toggle Menu-------------------------------------------------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cisco Homepage</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <section class="header" id="hero">
+
+        <div class="container">
+
+            <nav>
+                <a href="#"><img src="./Resource/Logo.png" alt="Logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">SERVICES<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown_menu">
+                                <ul>
+                                    <li><a href="https://nus.edu.ws/">NUS Online</a></li>
+                                    <li><a href="https://onlinestudy.nus.edu.ws/login/index.php">Onlinestudy</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./staff.html">STAFF</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE <i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown_menu">
+                                <ul>
+                                    <li><a href="course.html">Networking</a></li>
+                                    <li><a href="course.html">OS & IT </a></li>
+                                    <li><a href="course.html">Programming</a></li>
+                                    <li><a href="course.html">Internet of Things </a></li>
+                                    <li><a href="course.html">Packet Tracer</a></li>
+                                    <li><a href="course.html">Cybersecurity</a></li>
+                            </div>
+                        </li>
+                        <li><a href="https://form.jotform.com/222936657857877
+                        ">Heuristic Evaluation</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>National University Of Samoa Cisco Programme</h1>
+
+                <a href="./about.html" class="hero-btn">Visit Us To Know More</a>
+            </div>
+
+
+            <div class="slider">
+                <i style='font-size:36px;color:rgb(253, 250, 250)' class='far' id="prev">&#xf359;</i>
+
+                <div class="preview">
+                    <img src="https://media-exp2.licdn.com/dms/image/C511BAQE5SmZENpZ7aw/company-background_10000/0/1580963640252?e=2147483647&v=beta&t=Oo2Xsvokx0hs7f7KLMgvltHlx1d7KiDfAHmJrF1S7hE"
+                        class="active thumbnail">
+                    <img src="https://samoa-observer.s3.ap-southeast-2.amazonaws.com/store/738a781f3de8b2a07dbee5b1e173f123.jpg"
+                        class="thumbnail">
+                    <img src="https://etimg.etb2bimg.com/photo/93636667.cms" class="thumbnail">
+                </div>
+
+                <i style='font-size:36px;color:rgb(253, 250, 250)' class='far' id="next">&#xf35a;</i>
+            </div>
+
+
+            <script>
+
+                var prev = document.getElementById("prev");
+                var next = document.getElementById("next");
+
+                var thumbnail = document.getElementsByClassName("thumbnail");
+                var hero = document.getElementById("hero");
+
+                var backgroundImg = new Array(
+                    "https://media-exp2.licdn.com/dms/image/C511BAQE5SmZENpZ7aw/company-background_10000/0/1580963640252?e=2147483647&v=beta&t=Oo2Xsvokx0hs7f7KLMgvltHlx1d7KiDfAHmJrF1S7hE",
+                    "https://samoa-observer.s3.ap-southeast-2.amazonaws.com/store/738a781f3de8b2a07dbee5b1e173f123.jpg",
+                    "https://etimg.etb2bimg.com/photo/93636667.cms"
+                );
+
+                let i = 0;
+                next.onclick = function () {
+
+                    if (i < 2) {
+                        hero.style.backgroundImage = 'url("' + backgroundImg[i + 1] + '")';
+                        thumbnail[i + 1].classList.add("active");
+                        thumbnail[i].classList.remove("active");
+                        i++;
+                    }
+
+                }
+                prev.onclick = function () {
+
+                    if (i > 0) {
+                        hero.style.backgroundImage = 'url("' + backgroundImg[i - 1] + '")';
+                        thumbnail[i - 1].classList.add("active");
+                        thumbnail[i].classList.remove("active");
+                        i--;
+                    }
+                }
+
+
+
+            </script>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-------------------------------------------------Course-------------------------------------------------------->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores dolorem laboriosam culpa, quas nobis
+            molestiae rerum iure voluptate quaerat doloremque eaque natus corrupti dicta accusantium, quam maxime
+            consectetur aliquam laudantium?</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Networking</h3>
+                <img src="https://w10.naukri.com/mailers/2021/naukri-learning/oct/27oct-v2/What-is-Networking.jpg"
+                    alt="network">
+                <div>
+                    <a href="./course.html" class="hero-btn">View More</a>
+                </div>
+
+            </div>
+
+            <div class="course-col">
+                <h3>OS & IT</h3>
+                <img src="https://phoenixnap.com/kb/wp-content/uploads/2022/03/comparison-of-different-server-operating-systems.png"
+                    alt="OS & IT">
+
+                <div>
+                    <a href="./course.html" class="hero-btn">View More</a>
+                </div>
+
+            </div>
+
+            <div class="course-col">
+                <h3>Programming</h3>
+                <img src="https://www.zdnet.com/a/img/resize/0a6b0be2f543ddbf313fc83a706b807b77c3c202/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=900&width=1200"
+                    alt="Programming">
+                <div>
+                    <a href="./course.html" class="hero-btn">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="course-col">
+                <h3>Internet of Things</h3>
+                <img src="https://quynhon.ai/wp-content/uploads/2022/02/xcvxcb-800x420-1.jpeg" alt="IOT">
+                <div>
+                    <a href="./course.html" class="hero-btn">View More</a>
+                </div>
+            </div>
+
+            <div class="course-col">
+                <h3>Packet Tracer</h3>
+                <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/2ec1f5ca-9f61-4e3a-9983-7ec36d2bfbaf/2178131042/packet-tracer-screenshot.jpg"
+                    alt="packet-tracer">
+                <div>
+                    <a href="./course.html" class="hero-btn">View More</a>
+                </div>
+            </div>
+
+            <div class="course-col">
+                <h3>Cybersecurity</h3>
+                <img src="https://s3.amazonaws.com/utep-uploads/wp-content/uploads/unr/2020/07/27160408/unr-mscy-cybersecurity-careers-image.jpg"
+                    alt="Cybersecurity">
+                <div>
+                    <a href="./course.html" class="hero-btn">View More</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------------------------------------------------Facilities-------------------------------------------------------->
+
+    <section class="facility">
+        <h1>Our Cisco Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iure impedit molestias similique, quaerat
+            pariatur dignissimos accusantium, ab excepturi reprehenderit a ipsam consequatur amet aliquid neque voluptas
+            rem. Enim, id.</p>
+
+        <div class="row">
+            <div class="facility-col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4efLmcr4xDA0Dkq3B6NircB2wgAYZkCeYNA&usqp=CAU"
+                    alt="">
+                <div class="layer">
+                    <h3>CISCO</h3>
+                </div>
+            </div>
+
+            <div class="facility-col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScHhu-Vo2Mepwiga8DvBDukK__1SA-cp3jLw&usqp=CAU"
+                    alt="">
+                <div class="layer">
+                    <h3>CISCO</h3>
+                </div>
+            </div>
+
+            <div class="facility-col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEm2N8JU9RKymR_VPzREf64HaLV5V-PVYtDw&usqp=CAU"
+                    alt="">
+                <div class="layer">
+                    <h3>CISCO</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-------------------------------------------------Footer-------------------------------------------------------->
+
+    <Section class="footer">
+        <h4>Contact</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sapiente consequuntur dolor suscipit quaerat
+            cum illo aliquid voluptate voluptatibus <br> laudantium provident, odit molestias nostrum? Veritatis
+            perferendis
+            debitis nemo esse ad!</p>
+
+        <div class="icons">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+        <p class="copyright"> &copy; Copyright All rights reserved. </p>
+    </Section>
+
+
+    <!------------------------------------------Javascript for Toggle Menu-------------------------------------------------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
